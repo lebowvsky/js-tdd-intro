@@ -1,4 +1,4 @@
-const assert = require("assert");
+
 
 const capitalizeFirstLetters = (input) => {
   let arrTemp = input.split(" ");
@@ -11,10 +11,5 @@ const capitalizeFirstLetters = (input) => {
   return arrSoluce.join(" ");
 }
 
-/* console.log(capitalizeFirstLetters("")) */
-
-assert.strictEqual(typeof capitalizeFirstLetters, "function");
-assert.strictEqual(capitalizeFirstLetters("javaScript is so good"), "JavaScript Is So Good");
-assert.strictEqual(capitalizeFirstLetters("z"), "Z");
-assert.strictEqual(capitalizeFirstLetters(""), "");
+module.exports = capitalizeFirstLetters;
 
